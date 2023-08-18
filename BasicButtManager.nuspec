@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>BasicButtManager</id>
+	<title>BasicButtManager</title>
+    <version>1.0.0</version>
+	<releaseNotes>Initial release.</releaseNotes>
+    <authors>MLTorches</authors>
+
+	<description>A simple manager for your adult toys integration needs.</description>
+	<projectUrl>https://github.com/MLTorches/BasicButtManager</projectUrl>
+	  
+	<copyright>Copyright @ MLTorches 2023</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">BSD-3-Clause</license>
+	  
+    <icon>images\favicon128.png</icon>
+	<readme>docs\README.md</readme>
+	<tags>haptics buttplug sex toy adult</tags>
+
+	<dependencies>
+	  <dependency id="Buttplug.Client.Connectors.WebsocketConnector" version="3.0.1"/>
+	</dependencies>
+	  
+  </metadata>
+	
+  <files>
+    <file src="images\favicon128.png" target="images\"/>
+	<file src="docs\README.md" target="docs\"/>
+  </files>
+	
+</package>
