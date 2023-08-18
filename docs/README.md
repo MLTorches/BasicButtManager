@@ -18,7 +18,7 @@ manager.Exit();
 ```
 
 ## Wiki
-Click [here](api/BasicButtManager.BasicButtManager.html) to view the documentation!
+Click [here](https://mltorches.github.io/BasicButtManager/api/BasicButtManager.BasicButtManager.html) to view the documentation!
 
 ## Credits
 Buttplug: [qdot@github.com](https://github.com/qdot) | Favicon: [freepik@flaticon.com](https://www.flaticon.com/authors/frdmn) <br/>

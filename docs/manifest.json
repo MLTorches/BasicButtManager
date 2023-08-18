@@ -4,15 +4,12 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "docs/index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "+TI2Ap+YcBh5SXQKoyXqYqSl7/t4xVDqTpEtWPMu23c="
+          "hash": "fj8C2/7OCfsCEVuZfcovu0IomCkoInKYAsACYTG+lOk="
         }
       },
       "is_incremental": false,
@@ -101,7 +98,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 1,
-          "skipped_file_count": 1
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
