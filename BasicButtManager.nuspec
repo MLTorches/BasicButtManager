@@ -14,7 +14,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">BSD-3-Clause</license>
 	  
-    <icon>images\favicon128.png</icon>
+    <icon>resources\favicon128.png</icon>
 	<readme>docs\README.md</readme>
 	<tags>haptics buttplug sex toy adult</tags>
 
@@ -25,7 +25,7 @@
   </metadata>
 	
   <files>
-    <file src="images\favicon128.png" target="images\"/>
+    <file src="resources\favicon128.png" target="resources\"/>
 	<file src="docs\README.md" target="docs\"/>
   </files>
 	

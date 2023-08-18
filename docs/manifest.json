@@ -12,40 +12,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "SS1JjGloqC4ostYuQRCTs/Jl+dQgvGE4NHpymH5+Ypg="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/favicon.ico",
-      "output": {
-        "resource": {
-          "relative_path": "images/favicon.ico"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/favicon128.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/favicon128.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/favicon24.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/favicon24.png"
+          "hash": "+TI2Ap+YcBh5SXQKoyXqYqSl7/t4xVDqTpEtWPMu23c="
         }
       },
       "is_incremental": false,
@@ -57,7 +24,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BasicButtManager.BasicButtManager.html",
-          "hash": "9YPBExDp3Zk5or1XVspCkQV6DyEDiqr3iQ7ocPMwKRk="
+          "hash": "W794Gfe5VaqWKg4s/bIDIU7UNGSX/kCtEWfUtxeqQy4="
         }
       },
       "is_incremental": true,
@@ -82,6 +49,39 @@
         ".html": {
           "relative_path": "api/toc.html",
           "hash": "KtGNdiUH2fVSuv7U1adxN32HTpTtUzv9Xnj09DqLf+g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "resources/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/favicon128.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/favicon128.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/favicon24.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/favicon24.png"
         }
       },
       "is_incremental": false,

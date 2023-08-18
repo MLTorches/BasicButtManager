@@ -1,5 +1,5 @@
 
-# Basic Butt Manager ![Smiling Peach](../images/favicon24.png)
+# Basic Butt Manager ![Smiling Peach](../resources/favicon24.png)
 
 A basic wrapper around qdot's amazing [haptics library](https://github.com/buttplugio/buttplug-csharp), with the aim of providing a simple interface for integrating adult toy controls into Unity games / .NET applications (e.g. through mods). Not suitable for complex projects!
 
@@ -18,7 +18,7 @@ manager.Exit();
 ```
 
 ## Wiki
-Click [here](../_site/api/BasicButtManager.BasicButtManager.html) to view the documentation!
+Click [here](api/BasicButtManager.BasicButtManager.html) to view the documentation!
 
 ## Credits
 Buttplug: [qdot@github.com](https://github.com/qdot) | Favicon: [freepik@flaticon.com](https://www.flaticon.com/authors/frdmn) <br/>
