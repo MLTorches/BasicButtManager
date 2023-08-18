@@ -1,5 +1,5 @@
 
-# Basic Butt Manager ![Smiling Peach](https://mltorches.github.io/BasicButtManager/resources/favicon24.png)
+# Basic Butt Manager ![Smiling Peach](https://camo.githubusercontent.com/82d932c73232f2fa5afaad48b74c5c16d659ba1a138b56e6965777356370c025/68747470733a2f2f6d6c746f72636865732e6769746875622e696f2f4261736963427574744d616e616765722f7265736f75726365732f66617669636f6e32342e706e67)
 
 A basic wrapper around qdot's amazing [haptics library](https://github.com/buttplugio/buttplug-csharp), with the aim of providing a simple interface for integrating adult toy controls into Unity games / .NET applications (e.g. through mods). Not suitable for complex projects!
 
