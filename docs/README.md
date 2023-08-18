@@ -7,8 +7,8 @@ A basic wrapper around qdot's amazing [haptics library](https://github.com/buttp
 
 To set all connected toys to half intensity:
 
-1. Launch Intiface :copyright: Central (with default server settings).
-2. Add this .dll to your project's references.
+1. Launch [Intiface :copyright: Central](https://intiface.com/central/) (with default server settings).
+2. Add this [.dll](https://github.com/MLTorches/BasicButtManager/releases/tag/v1.0.3) to your project's references (or install from [NuGet](https://www.nuget.org/packages/BasicButtManager/)).
 3. Somewhere in your code...
 
 ```
