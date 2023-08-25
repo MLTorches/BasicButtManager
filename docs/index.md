@@ -17,6 +17,28 @@ manager.Set(0.5f);
 manager.Exit();
 ```
 
+## WARNING
+
+If you are MODDING an existing project, please use [ButtServer](https://github.com/MLTorches/ButtServer) + [ButtClient](https://www.nuget.org/packages/ButtClient) instead.
+
+### Explanation:
+
+***This is a lower-level, framework-dependent (.NET 4) package meant for developers working on their own projects where they can control the underlying framework.*** For example, there are some compatibility issues between certain packages used by (the dependencies of) the underlying Buttplug package and some versions of the .NET framework.
+
+This concern is taken care off under the hood automatically by the ***Butt Server***, which is a standalone executable tested and known to work with [Buttplug](https://github.com/buttplugio/buttplug-csharp). The ***Butt Client*** (which you as a modder will hook into the existing game/application) then uses bare minimum socket logic to communicate with ButtServer, independent of any potential framework-dependent libraries.
+
+### Communication Path
+
+The typical communication path goes like this:
+
+```text
+Existing Unity Game --> BepinEx + Harmony --> ButtClient --> ButtServer --> BasicButtManager --> Intiface Central --> Toys
+      (C# hook)                                 (.dll)         (.exe)            (.dll)               (.exe)    
+```           
+
+So once again, DO NOT expect to just plug this .dll into an existing Unity game on Steam and just expect it to work!
+It works just wonderfully fine though if you are creating your own .NET 4 project from scratch. Have fun modding! <3
+
 ## Wiki
 Click [here](https://mltorches.github.io/BasicButtManager/api/BasicButtManager.BasicButtManager.html) to view the documentation!
 

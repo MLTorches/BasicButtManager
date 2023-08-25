@@ -26,10 +26,12 @@ namespace BasicButtManager
         /// <param name="name">Name to identify the purpose of the manager, typically the game's name.</param>
         private async Task Init(String name)
         {
+            Console.WriteLine("Initializing client...");
             client = new ButtplugClient(name);
             oscillateToken = oscillateTokenSource.Token;
             strokeToken = strokeTokenSource.Token;
 
+            Console.WriteLine("Adding device listeners...");
             void HandleDeviceAdded(object aObj, DeviceAddedEventArgs aArgs)
                 => Console.WriteLine($"Device connected: {aArgs.Device.Name}");
 
@@ -40,7 +42,10 @@ namespace BasicButtManager
 
             client.DeviceRemoved += HandleDeviceRemoved;
 
-            await client.ConnectAsync(new ButtplugWebsocketConnector(uri: new Uri("ws://127.0.0.1:12345"))); //assume default
+            Console.WriteLine("Connecting to server...");
+            await client.ConnectAsync(new ButtplugWebsocketConnector(uri: new Uri("ws://localhost:12345"))); //assume default
+
+            Console.WriteLine("Scanning...");
             await client.StartScanningAsync(); //intentional, allows devices to be connected whenever
         }
 
@@ -51,8 +56,11 @@ namespace BasicButtManager
         /// <param name="name">Name to identify the purpose of the manager, typically the game's name.</param>
         public BasicButtManager(String name = "BasicButtManager")
         {
+            Console.WriteLine("ButtManager Constructor");
             Init(name).Wait();
+            Console.WriteLine("Starting oscillation...");
             _ = Oscillate();
+            Console.WriteLine("Starting strokes...");
             _ = Stroke();
         }
 
@@ -144,6 +152,7 @@ namespace BasicButtManager
                     await Task.Delay((int)delta);
                 }
             }
+            await Press(targetIntensity);
             isFading = false;
         }
 

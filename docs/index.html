@@ -73,7 +73,18 @@
 <pre><code>BasicButtManager manager = new BasicButtManager(&quot;Love Rhythm&quot;);
 manager.Set(0.5f);
 manager.Exit();
-</code></pre><h2 id="wiki">Wiki</h2>
+</code></pre><h2 id="warning">WARNING</h2>
+<p>If you are MODDING an existing project, please use <a href="https://github.com/MLTorches/ButtServer">ButtServer</a> + <a href="https://www.nuget.org/packages/ButtClient">ButtClient</a> instead.</p>
+<h3 id="explanation">Explanation:</h3>
+<p><strong><em>This is a lower-level, framework-dependent (.NET 4) package meant for developers working on their own projects where they can control the underlying framework.</em></strong> For example, there are some compatibility issues between certain packages used by (the dependencies of) the underlying Buttplug package and some versions of the .NET framework.</p>
+<p>This concern is taken care off under the hood automatically by the <strong><em>Butt Server</em></strong>, which is a standalone executable tested and known to work with <a href="https://github.com/buttplugio/buttplug-csharp">Buttplug</a>. The <strong><em>Butt Client</em></strong> (which you as a modder will hook into the existing game/application) then uses bare minimum socket logic to communicate with ButtServer, independent of any potential framework-dependent libraries.</p>
+<h3 id="communication-path">Communication Path</h3>
+<p>The typical communication path goes like this:</p>
+<pre><code class="lang-text">Existing Unity Game --&gt; BepinEx + Harmony --&gt; ButtClient --&gt; ButtServer --&gt; BasicButtManager --&gt; Intiface Central --&gt; Toys
+      (C# hook)                                 (.dll)         (.exe)            (.dll)               (.exe)    
+</code></pre><p>So once again, DO NOT expect to just plug this .dll into an existing Unity game on Steam and just expect it to work!
+It works just wonderfully fine though if you are creating your own .NET 4 project from scratch. Have fun modding! &lt;3</p>
+<h2 id="wiki">Wiki</h2>
 <p>Click <a href="https://mltorches.github.io/BasicButtManager/api/BasicButtManager.BasicButtManager.html">here</a> to view the documentation!</p>
 <h2 id="credits">Credits</h2>
 <p>Buttplug: <a href="https://github.com/qdot">qdot@github.com</a> | Favicon: <a href="https://www.flaticon.com/authors/frdmn">freepik@flaticon.com</a> <br></p>
