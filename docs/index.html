@@ -75,7 +75,7 @@ manager.Set(0.5f);
 manager.Exit();
 </code></pre><h2 id="warning">WARNING</h2>
 <p>If you are MODDING an existing project, please use <a href="https://github.com/MLTorches/ButtServer">ButtServer</a> + <a href="https://www.nuget.org/packages/ButtClient">ButtClient</a> instead.</p>
-<h3 id="explanation">Explanation:</h3>
+<h3 id="explanation">Explanation</h3>
 <p><strong><em>This is a lower-level, framework-dependent (.NET 4) package meant for developers working on their own projects where they can control the underlying framework.</em></strong> For example, there are some compatibility issues between certain packages used by (the dependencies of) the underlying Buttplug package and some versions of the .NET framework.</p>
 <p>This concern is taken care off under the hood automatically by the <strong><em>Butt Server</em></strong>, which is a standalone executable tested and known to work with <a href="https://github.com/buttplugio/buttplug-csharp">Buttplug</a>. The <strong><em>Butt Client</em></strong> (which you as a modder will hook into the existing game/application) then uses bare minimum socket logic to communicate with ButtServer, independent of any potential framework-dependent libraries.</p>
 <h3 id="communication-path">Communication Path</h3>

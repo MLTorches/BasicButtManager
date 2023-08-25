@@ -21,7 +21,7 @@ manager.Exit();
 
 If you are MODDING an existing project, please use [ButtServer](https://github.com/MLTorches/ButtServer) + [ButtClient](https://www.nuget.org/packages/ButtClient) instead.
 
-### Explanation:
+### Explanation
 
 ***This is a lower-level, framework-dependent (.NET 4) package meant for developers working on their own projects where they can control the underlying framework.*** For example, there are some compatibility issues between certain packages used by (the dependencies of) the underlying Buttplug package and some versions of the .NET framework.
 
